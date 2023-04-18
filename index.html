@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/e7ebc2fc39.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="/js/index.js"defer></script>
+
+    <title>To-do List</title>
+</head>
+
+<body>
+    <header>
+        <h1>To-do List</h1>
+    </header>
+    <form>
+        <input type="text" class="every-input" maxlength="40" />
+        <button class="all-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+
+        <div class="select">
+            <select name="all" class="all-filter">
+                <option value="lists">Todas</option>
+                <option value="completed">Finalizadas</option>
+                <option value="uncompleted">Não Finalizadas</option>
+            </select>
+        </div>
+    </form>
+    
+    <div class="every-container">
+        <ul class="whole-list"></ul>
+    </div>
+
+</body>
+
+</html>

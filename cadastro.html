@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <script src="/js/cadastro.js" defer></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+    <title>Pagina cadastro</title>
+</head>
+
+<body class="body">
+    <div class="container">
+            <h2>Cadastro</h2>
+            <div id="msgError"></div>
+            <div id="msgSuccess"></div>
+
+            <div id='msgError'></div>
+            <div id='msgSuccess'></div>
+
+            <label id="label-name" for="name">Nome</label>
+            <input type="text" id="input-name">
+
+            <label id="label-user" for="user">Usuario</label>
+            <input type="text" id="input-user">
+
+            <label id="label-secret" for="secret">Senha</label>
+            <input type="text" id="input-secret" class="inputSecret">
+            <span  id="btnSecret" class="material-symbols-outlined">visibility_off</span>
+
+            <label id="label-comfirm-secret" for="comfirmSecret">Confirme senha</label>
+            <input type="text" id="input-comfirm-secret" class="inputComfirmSecret">
+            <span id="btnComfirmSecret" class="material-symbols-outlined">visibility_off</span>
+
+            <div>
+                <button onclick='register()'>Cadastrar</button>
+            </div>
+    </div>
+</body>
+
+</html>
